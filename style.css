@@ -1,0 +1,294 @@
+
+:root {
+    --bodyBg: rgb(242, 155, 4);
+    --black: rgb(27, 25, 25);
+    --bodyColor: black;
+    --primary: hwb(38 2% 8%);
+    --transition: ease-in-out 300ms;
+    --gold: rgb(255, 157, 0);
+  }
+  
+  /* RESET general style ************/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: none;
+    list-style: none;
+  }
+  
+  body {
+    background-color: var(--bodyBg);
+    color: var(--bodyColor);
+    padding-bottom: 3rem;
+  }
+  
+  /* CONTAINER **********************/
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* LOGO section *******************/
+  .logo {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  
+  .logo span {
+    color: var(--primary);
+    font-weight: bolder;
+    font-family: sans-serif;
+  }
+  
+  /* NAVIGATION ********************/
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background: var(--white);
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--bodyColor);
+    border: solid 2px var(--bodyBg);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.3rem .5rem;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+  }
+  
+  nav a:hover {
+    border: solid 2px var(--primary);
+  }
+  
+  a,
+  .active {
+    color: var(--primary);
+  }
+  
+  /* PRODUCT IN HOME PAGE **********/
+  .products {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .product {
+    width: 100%;
+    height: 22rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+    border: solid 1px var(--white);
+    transition: var(--transition);
+  }
+  
+  .product:hover {
+    transform: scale(1.04);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      -50px -50px 0px -30px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+  }
+  .product .product__img {
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+  }
+  .product img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .product img:hover {
+    transform: scale(1.1);
+  }
+  
+  .product .product__name {
+    font-size: 1rem;
+  }
+  
+  .product .product__price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: -1.5rem;
+  }
+  
+  .product .product__rate {
+    font-size: 3rem;
+    color: var(--gold);
+    cursor: pointer;
+  }
+  
+  .product button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: solid 1px var(--bodyColor);
+    transition: var(--transition);
+  }
+  
+  .product button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: scale(1.04);
+    border: solid 1px var(--primary);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      -50px -50px 0px -30px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+  }
+  
+  /* ***/
+  @media (min-width: 768px) {
+    /* CONTAINER **********************/
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    /* LOGO section *******************/
+    .logo {
+      text-align: center;
+      margin: 2rem;
+      font-size: 2rem;
+      font-style: italic;
+    }
+  
+    .logo span {
+      color: var(--primary);
+      font-weight: bolder;
+      font-family: sans-serif;
+    }
+  
+    /* NAVIGATION ********************/
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2
+      7rem;
+      background: var(--white);
+      padding: 0.4rem 2rem;
+      border-radius: 0.5rem;
+    }
+  
+    nav a {
+      text-decoration: none;
+      color: var(--bodyColor);
+      border: solid 2px var(--bodyBg);
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: var(--transition);
+    }
+  
+    nav a:hover {
+      border: solid 2px var(--primary);
+    }
+  
+    a,
+    .active {
+      color: var(--primary);
+    }
+  
+    /* PRODUCT IN HOME PAGE **********/
+    .products {
+      padding-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+  
+    .product {
+      width: 100%;
+      height: 22rem;
+      padding-bottom: 1rem;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      border: solid 1px var(--white);
+      transition: var(--transition);
+    }
+  
+    .product:hover {
+      transform: scale(1.04);
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        -50px -50px 0px -30px rgba(0, 0, 0, 0);
+      box-shadow: 0px 10px 13px -7px #000000,
+        -50px -50px 0px -30px rgba(0, 0, 0, 0);
+    }
+    .product .product__img {
+      width: 100%;
+      height: 12rem;
+      overflow: hidden;
+    }
+    .product img {
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+  
+    .product img:hover {
+      transform: scale(1.1);
+    }
+  
+    .product .product__name {
+      font-size: 1.2rem;
+    }
+  
+    .product .product__price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: -1.5rem;
+    }
+  
+    .product .product__rate {
+      font-size: 3rem;
+      color: var(--gold);
+      cursor: pointer;
+    }
+  
+    .product button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      border: solid 1px var(--bodyColor);
+      transition: var(--transition);
+    }
+  
+    .product button:hover {
+      background-color: var(--primary);
+      color: var(--white);
+      transform: scale(1.04);
+      border: solid 1px var(--primary);
+      -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        -50px -50px 0px -30px rgba(0, 0, 0, 0);
+      box-shadow: 0px 10px 13px -7px #000000,
+        -50px -50px 0px -30px rgba(0, 0, 0, 0);
+    }
+
+    .h1 {
+      background-color: blue;
+    }
+  }
+  
