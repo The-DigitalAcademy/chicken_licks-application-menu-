@@ -60,9 +60,9 @@ var product__img = [
 
   var cartChicken = []
   
-  var costall = 0
+  var costall = 0;
   
-  // for html LINK JS TO HTML ELEMENT
+ // for html LINK JS TO HTML ELEMENT
   var products = document.getElementById('products')
   var images = document.getElementById('images')
   var addtotal= document.getElementById('addtotal')
