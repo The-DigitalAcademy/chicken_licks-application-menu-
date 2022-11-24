@@ -94,6 +94,8 @@ var product__img = [
       `
     }
   }
+
+  provescreen();
   
   function screenIImg(i) {
     document.getElementById('totalnum')
