@@ -67,6 +67,7 @@ var product__img = [
   var images = document.getElementById('images')
   var addtotal= document.getElementById('addtotal')
   var countadd= document.getElementById('countadd')
+  var productforsell = document.getElementById('productforsell')
 
   // Display Product
   function  provescreen() {
@@ -106,6 +107,13 @@ var product__img = [
     provescreen();
     show();
   }
+
+  function productforsell(i) {
+    document.getElementById('countadd')
+    cartChicken.push(product__img[i])
+  }
+
+  productforsell;
   
   function show() {
   
