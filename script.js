@@ -154,12 +154,12 @@ var product__img = [
       }
     }
   
-  function remove(i) {
-    cartChicken.splice(i, 1);
+  // function remove(i) {
+  //   cartChicken.splice(i, 1);
   
-    calculateTotal();
-    show();
-  }
+  //   calculateTotal();
+  //   show();
+  // }
   
   
   show();
